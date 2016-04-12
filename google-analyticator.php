@@ -1286,7 +1286,7 @@ function ga_current_user_is($roles)
 	if ( !$roles ) return false;
 
 	global $current_user;
-	get_currentuserinfo();
+	wp_get_current_user();
 	$user_id = intval( $current_user->ID );
 
 	if ( !$user_id ) {
